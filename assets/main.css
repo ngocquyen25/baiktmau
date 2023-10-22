@@ -125,7 +125,7 @@
     height: 350px;
 }
 .navbar__img {
-    background-image: url("./img/ghe-sofa-hien-dai-don-gian-1.jpg");
+    background-image: url("./img/394736565_243490408703312_2141486469200102478_n.jpg");
     height: 100%;
 }
 .category__list{
@@ -203,19 +203,20 @@
     margin-top: 30px;
 }
 .container__banner{
-    background-image: url("./img/tu-trung-bay-mo-hinh-1.webp");
+    background-image: url("./img/393834368_144901925348277_7496350222215450816_n.jpg");
     height: 580px;
     background-size: contain;
 }
 .container__slide{
     height: 200px;
-    background-image: url("./img/Screenshot\ 2023-10-22\ 174838.png");
+    background-image: url("./img/395054116_1695016284307853_2122984877863360159_n.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .container__small-slide{
     height: 200px;
-    background-image: url("./img/Screenshot\ 2023-10-22\ 175057.png");
-    
+    background-image: url("./img/394575005_1337250106885727_1917508224837863219_n.jpg");
+    background-size: contain;
     
 }
 .footer{
