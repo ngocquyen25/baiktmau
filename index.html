@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+           
+        <header class="header">
+            <div class="grid wide">
+                <div class="head">
+                    <div class="logo">
+                        <h2>SMARKET</h2>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search for product" class="search__input">
+                        <i class="fa-solid fa-magnifying-glass icon__search"></i>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__telephone">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact__content">
+                            <b class="contact__content__title">Free call us</b>
+                            <p class="contact__content__numberphone">(+84).9999.8894</p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__icon">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <div class="cart__content">
+                            <b class="cart__content__title">Your</b>
+                            <p class="cart__content__item">(0) item(s)</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </header>
+                <div class="navbar">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-8 navbar__content">
+                                <div class="nav">
+                                    <div class="nav__item">
+                                        <p>
+                                            <i class="fa-solid fa-house"></i>HOME
+                                            <ul class="nav__list">
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="nav__item">
+                                        <p>
+                                            <i class="fa-solid fa-briefcase"></i>BLOG
+                                            <ul class="nav__list">
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="nav__item">
+                                        <p>
+                                            <i class="fa-solid fa-bag-shopping"></i>SHOP PAGES
+                                            <ul class="nav__list">
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="nav__item">
+                                        <p class="nav__childmenu"><i class="fa-solid fa-phone"></i>CONTACT US
+                                            <ul class="nav__list">
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                                <li class="nav__list__item">Blog List</li>
+                                            </ul>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="navbar__img">
+                                <!-- <img class="" src="./assets/img/ghe-sofa-hien-dai-don-gian-1.jpg" alt=""> -->
+                                </div>
+                            </div>
+                            <div class="col l-4 category">
+                                <ul class="category__list">
+                                    <li class="category__item"><i class="fa-solid fa-bars"></i> <b>CATEGORY</b></li>
+                                    <li class="category__item"><i class="fa-solid fa-cart-plus"></i>Bedding</li>
+                                    <li class="category__item"><i class="fa-solid fa-cart-plus"></i>Kitchen</li>
+                                    <li class="category__item"><i class="fa-solid fa-bed"></i>Beds</li>
+                                    <li class="category__item"><i class="fa-solid fa-bed"></i> Living Room</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+                <div class="grid wide">
+                    <div class="option">
+                        <h2>BATH ROOM</h2>
+                        <ul class="option__list">
+                            <li class="option__item "><i class="fa-regular fa-clock"></i>Best</li>
+                            <li class="option__item "><i class="fa-regular fa-circle-check"></i>SellerTop</li>
+                            <li class="option__item "><i class="fa-solid fa-signal"></i>Rated</li>
+                            <li class="option__item "><i class="fa-regular fa-star"></i>Special</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid wide">
+                    <div class="select">
+                        <ul class="select__list">
+                            <li class="select__item">SHOWER</li>
+                            <li class="select__item">SOAP&SHAMPOO</li>
+                            <li class="select__item">TOASTER</li>
+                            <li class="select__item">TOILET</li>
+                            <li class="select__item">WASHCLOTHES& TOWEL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-8">
+                                <div class="row">
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row contaner__list--margin">
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="container__item">
+                                            <div class="container__backgound">
+                                                <div class="container__image" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfr0cx0trofe81_tn)">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="container__name">
+                                                <p>Nunc sodales orciuis enim</p>
+                                                <p class="container__price">$16.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="container__banner">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contaner__list--margin">
+                            <div class="col l-8">
+                                <div class="container__slide">
+
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="container__small-slide">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="grid wide">
+                        <div class="footer__content">
+                            <ul class="footer__icon">
+                                <li class="footer__item"><i class="fa-brands fa-facebook"></i></li>
+                                <li class="footer__item"><i class="fa-brands fa-instagram"></i></li>
+                                <li class="footer__item"><i class="fa-brands fa-twitter"></i></li>
+                                <li class="footer__item"><i class="fa-brands fa-invision"></i></li>
+                            </ul>
+                            <div class="footer__name">
+                                <b>Tao làm đó</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>      
+</body>
+</html>

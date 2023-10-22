@@ -1,0 +1,247 @@
+.app{
+    
+}
+.header{
+    height: var(--header-height);
+    /* background-image: linear-gradient(0, #fe6433, #f53e2d); */
+    max-width: 100%;
+    display: flex;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+.search{
+    flex: 6;
+    position: relative;
+}
+.search__input{
+    width: 80%;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: 1px solid green ;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.icon__search{
+    position: absolute;
+    right: 120px;
+    top: 9px;
+}
+.head .logo{
+    font-size: 1.9rem;
+}
+.head .contact{
+    display: flex;
+    flex: 1;
+    margin-right: 50px;
+}
+.contact__telephone i{
+    font-size: 1.6rem;
+    color: green;
+    margin-right: 5px;
+}
+.contact__telephone{
+    display: flex;
+    align-items: center;
+}
+.contact__content{
+    line-height: 0.8rem;
+}
+.nav__list{
+    width: 150px;
+    background-color: white;
+    list-style: none;
+    line-height: 30px;
+    padding-left: 0;
+    position: absolute;
+    display: none;
+    animation:headerNotify 0.3s ;
+}
+@keyframes headerNotify {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.nav__list__item{
+    border: 1px solid silver;
+}
+.contact__content__title{
+    font-size: 1.3rem;
+}
+.head .cart{
+    flex: 1;
+    display: flex;
+}
+.cart__icon{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: green;
+    margin-right: 10px;
+}
+.cart__content{
+    line-height: 0.8rem;
+    
+}
+.cart__content__title{
+    font-size: 1.3rem;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    border: 1px solid silver;
+    height: 35px;
+    padding-left: 5px;
+}
+.nav__item{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav__item:hover{
+    color: green;
+}
+.nav__item i{
+    margin-right: 5px;
+}
+.nav__childmenu{
+    display: block;
+    position: relative;
+}
+.nav__item:hover .nav__list{
+    display: block;
+   color: black;
+    
+}
+.nav__list__item{
+    padding-left: 5px;
+}
+.navbar__content{
+    height: 350px;
+}
+.navbar__img {
+    background-image: url("./img/ghe-sofa-hien-dai-don-gian-1.jpg");
+    height: 100%;
+}
+.category__list{
+    width: 100%;
+    margin-top: 0;
+    border: 1px solid silver;
+    height: 385px;
+    padding-left: 0;
+}
+.category__item{
+    list-style: none;
+    border: 1px solid silver;
+    line-height: 35px;
+    padding-left: 15px;
+    font-size: 1.6rem;
+}
+.category__item i{
+    margin-right: 5px;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid silver;
+}
+.option__list{
+
+}
+
+.option__item{
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1.3rem;
+}
+.option__item i{
+    margin-right: 2px;
+}
+.select__list{
+    padding-left: 0;
+}
+.select__item{
+    display: inline-block;
+    list-style: none;
+    margin-right: 14px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.container__item{
+    width: 100%;
+}
+.container__image{
+    padding-top: 60%;
+    width: 60%;
+    background-size: contain;
+}
+
+.container__name{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+}
+.container__name p{
+    margin: 0;
+}
+.container__price{
+    color: red;
+}
+.container__backgound{
+    background-color: rgba(224, 222, 222, 0.342);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contaner__list--margin{
+    margin-top: 30px;
+}
+.container__banner{
+    background-image: url("./img/tu-trung-bay-mo-hinh-1.webp");
+    height: 580px;
+    background-size: contain;
+}
+.container__slide{
+    height: 200px;
+    background-image: url("./img/Screenshot\ 2023-10-22\ 174838.png");
+    background-repeat: no-repeat;
+}
+.container__small-slide{
+    height: 200px;
+    background-image: url("./img/Screenshot\ 2023-10-22\ 175057.png");
+    
+    
+}
+.footer{
+    background-color: black;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 10px;
+}
+.footer__icon{
+    padding-left: 0;
+}
+.footer__item{
+    display: inline-block;
+    color: green;
+    font-size: 1.6rem;
+    margin-right: 5px;
+    border: 1px solid green;
+    padding: 5px;
+    
+}
+.footer__name{
+    color: aliceblue;
+    font-size: 1.6rem;
+    margin-right: 10px;
+}
